@@ -1,3 +1,5 @@
+/* Change this file to get your personal Portfolio */
+
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
@@ -6,15 +8,15 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true,
+  enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000
+  duration: 2000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true
+  animated: true // Set to false to use static SVG
 };
 
 const greeting = {
@@ -23,18 +25,24 @@ const greeting = {
   subTitle: emoji(
     "Aspiring computer science graduate seeking a challenging position in a dynamic technology environment to leverage strong programming skills, research experience, and system administration knowledge. Aiming to contribute to innovative projects while continuously expanding expertise in the field."
   ),
-  resumeLink: "./assets/Doc/CV.pdf",
-  displayGreeting: true
+  resumeLink:
+    "./assets/Doc/CV.pdf", // Set to empty to hide the button
+  displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/YourGitHubUsername",
-  linkedin: "https://www.linkedin.com/in/YourLinkedInUsername/",
-  gmail: "MahdiDarouich@gmail.com",
-  // Add other social media links if available
-  display: true
+  github: "https://github.com/saadpasta",
+  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  gmail: "saadpasta70@gmail.com",
+  gitlab: "https://gitlab.com/saadpasta",
+  facebook: "https://www.facebook.com/saad.pasta7",
+  medium: "https://medium.com/@saadpasta",
+  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
+  display: false // Set true to display this section, defaults to false
 };
 
 // Skills Section
@@ -48,33 +56,36 @@ const skillsSection = {
     emoji("⚡ Build applications using various programming languages including C++, Java, and Python")
   ],
 
-  softwareSkills: [
-    {
-      skillName: "C++",
-      fontAwesomeClassname: "fab fa-cuttlefish"
-    },
-    {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Assembly",
-      fontAwesomeClassname: "fas fa-microchip"
-    },
-    {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "SQL",
-      fontAwesomeClassname: "fas fa-database"
-    }
-  ],
-  display: true
+  /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery */
+
+softwareSkills: [
+  {
+    skillName: "C++",
+    fontAwesomeClassname: "fab fa-cuttlefish"
+  },
+  {
+    skillName: "Java",
+    fontAwesomeClassname: "fab fa-java"
+  },
+  {
+    skillName: "Python",
+    fontAwesomeClassname: "fab fa-python"
+  },
+  {
+    skillName: "Assembly",
+    fontAwesomeClassname: "fas fa-microchip"
+  },
+  {
+    skillName: "Linux",
+    fontAwesomeClassname: "fab fa-linux"
+  },
+  {
+    skillName: "SQL",
+    fontAwesomeClassname: "fas fa-database"
+  }
+],
+display: true
 };
 
 // Education Section
@@ -87,7 +98,7 @@ const educationInfo = {
       logo: require("./assets/images/sharjahLogo.png"), // You'll need to add this logo to your assets
       subHeader: "Bachelor of Computer Science",
       duration: "2020 – Present (Final Semester)",
-      desc: "GPA: 3.53 (as of Spring 2021)",
+      desc: "GPA: 3.53",
       descBullets: [
         "Contributed to research on Enhancing IoT Data",
         "Gained hands-on experience in server infrastructure management and network configuration"
@@ -96,7 +107,7 @@ const educationInfo = {
     {
       schoolName: "National Charity School",
       logo: require("./assets/images/ncsLogo.png"), // You'll need to add this logo to your assets
-      subHeader: "High School Diploma (Advanced Stream)",
+      subHeader: "High School (Advanced Stream)",
       duration: "2008 - 2020",
       desc: "Graduated with an average of 93.38%",
     }
@@ -175,11 +186,49 @@ const workExperiences = {
   ]
 };
 
-// Open Source Section
+/* Your Open Source Section to View Your Github Pinned Projects
+To know how to get github key look at readme.md */
+
 const openSource = {
-  showGithubProfile: "true",
-  display: true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
+
+// Some big projects you have worked on
+
+const bigProjects = {
+  title: "Big Projects",
+  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  projects: [
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Saayahealth",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Achievement Section
+// Include certificates, talks etc
 
 // Achievement Section
 const achievementSection = {
@@ -216,8 +265,70 @@ const achievementSection = {
   display: true
 };
 
-// Blogs Section, Big Projects, Talks Section, and Podcast Section
-// These can be set to display: false if you don't have content for them yet
+// Blogs Section
+
+const blogSection = {
+  title: "Blogs",
+  subtitle:
+    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  blogs: [
+    {
+      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      description:
+        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+    },
+    {
+      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+      title: "Why REACT is The Best?",
+      description:
+        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Talks Sections
+
+const talkSection = {
+  title: "TALKS",
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
+
+  talks: [
+    {
+      title: "Build Actions For Google Assistant",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "https://bit.ly/saadpasta-slides",
+      event_url: "https://www.facebook.com/events/2339906106275053/"
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Podcast Section
+
+const podcastSection = {
+  title: emoji("Podcast 🎙️"),
+  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+
+  // Please Provide with Your Podcast embeded Link
+  podcast: [
+    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Resume Section
+const resumeSection = {
+  title: "Resume",
+  subtitle: "Feel free to download my resume",
+
+  // Please Provide with Your Podcast embeded Link
+  display: true // Set false to hide this section, defaults to true
+};
 
 // Contact Section
 const contactInfo = {
@@ -227,7 +338,14 @@ const contactInfo = {
   email_address: "MahdiDarouich@gmail.com"
 };
 
-const isHireable = true;
+// Twitter Section
+
+const twitterDetails = {
+  userName: "twitter", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
+};
+
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -239,7 +357,13 @@ export {
   techStack,
   workExperiences,
   openSource,
+  bigProjects,
   achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
   contactInfo,
-  isHireable
+  twitterDetails,
+  isHireable,
+  resumeSection
 };
