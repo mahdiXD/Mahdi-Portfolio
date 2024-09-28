@@ -154,7 +154,7 @@ const workExperiences = {
     {
       role: "Intern",
       company: "Huawei Technologies",
-      companylogo: require("./assets/images/huaweiLogo.png"), // You'll need to add this logo to your assets
+      companylogo: require("./assets/images/huaweiLogoSQBG.png"), // You'll need to add this logo to your assets
       date: "2023", // You may want to update this with more specific dates
       desc: "Gained practical experience in server infrastructure management and network troubleshooting",
       descBullets: [
@@ -179,7 +179,7 @@ const workExperiences = {
     {
       role: "Crew Member",
       company: "Majid al Futtaim Entertainment",
-      companylogo: require("./assets/images/majidAlFuttaimLogo.png"), // You'll need to add this logo to your assets
+      companylogo: require("./assets/images/majidAlFuttaimLogoSQBG.png"), // You'll need to add this logo to your assets
       date: "2021 – 2022",
       desc: "Provided customer service and ensured smooth operations in entertainment facilities",
     }
