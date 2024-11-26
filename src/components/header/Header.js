@@ -73,7 +73,8 @@ function Header() {
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <!-- <a href="#resume">Resume</a> --> /* cv is in greeting now */
+              <a href="#greeting">Resume</a>
             </li>
           )}
           <li>

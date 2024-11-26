@@ -244,7 +244,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "src/assets/Doc/RedHat_course_certificate.pdf"
+          url: "./assets/Doc/RedHat_course_certificate.pdf"
         }
       ]
     },
@@ -327,7 +327,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Contact Section
