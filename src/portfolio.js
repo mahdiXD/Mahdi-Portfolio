@@ -244,7 +244,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "Your certification URL here"
+          url: "src/assets/Doc/RedHat_course_certificate.pdf"
         }
       ]
     },
