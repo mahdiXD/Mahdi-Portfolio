@@ -143,7 +143,7 @@ const workExperiences = {
     {
       role: "Research Assistant",
       company: "University of Sharjah",
-      companylogo: require("./assets/images/sharjahLogo.png"), // Reuse the university logo
+      companylogo: require("./assets/images/sharjahLogoBGSQ.png"),
       date: "2024",
       desc: "Contributed to a research paper on Enhancing IoT Data",
       descBullets: [
@@ -172,14 +172,14 @@ const workExperiences = {
     {
       role: "Admission Friend",
       company: "University of Sharjah",
-      companylogo: require("./assets/images/sharjahLogo.png"), // Reuse the university logo
+      companylogo: require("./assets/images/sharjahLogoBGSQ.png"), // Reuse the university logo
       date: "2021",
       desc: "Assisted prospective students with the admission process",
     },
     {
       role: "Crew Member",
       company: "Majid al Futtaim Entertainment",
-      companylogo: require("./assets/images/majidAlFuttaimLogoSQBG.png"), // You'll need to add this logo to your assets
+      companylogo: require("./assets/images/majidAlFuttaimLogoBGSQ.png"), // You'll need to add this logo to your assets
       date: "2021 – 2022",
       desc: "Provided customer service and ensured smooth operations in entertainment facilities",
     }
@@ -232,18 +232,17 @@ const bigProjects = {
 
 // Achievement Section
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Certifications 🏆"),
   subtitle: "Certifications and Cool Stuff that I have achieved!",
-
   achievementsCards: [
     {
       title: "Red Hat System Administration I (RH124)",
       subtitle: "Completed certification for Red Hat System Administration",
-      image: require("./assets/images/redhatLogo.png"), // You'll need to add this logo to your assets
+      image: require("./assets/images/redhatLogo.png"),
       imageAlt: "Red Hat Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Certificate",
           url: "./assets/Doc/RedHat_course_certificate.pdf"
         }
       ]
@@ -251,16 +250,15 @@ const achievementSection = {
     {
       title: "Certificate of Appreciation",
       subtitle: "Awarded by University of Sharjah for UOS Innovation Week 2024",
-      image: require("./assets/images/sharjahLogo.png"), // Reuse the university logo
-      imageAlt: "University of Sharjah Logo",
+      image: require("./assets/images/sharjahLogo.png"),
+      imageAlt: "University of Sharjah Logo", 
       footerLink: [
         {
-          name: "Award",
-          url: "Your award details URL here"
+          name: "View Award",
+          url: "./assets/Doc/UOS_Innovation_Week_Award.pdf"
         }
       ]
-    },
-    // You can add more achievements here
+    }
   ],
   display: true
 };
