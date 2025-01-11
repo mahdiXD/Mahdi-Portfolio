@@ -33,16 +33,16 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/mahdiXD",
+  linkedin: "https://www.linkedin.com/in/mahdi-darouich/",
+  gmail: "MahdiDarouich@gmail.com",
+  gitlab: "",//https://gitlab.com/saadpasta",
+  facebook: "",//https://www.facebook.com/saad.pasta7",
+  medium: "",//https://medium.com/@saadpasta",
+  stackoverflow: "",//https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: false // Set true to display this section, defaults to false
+  display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
@@ -97,15 +97,14 @@ const educationInfo = {
       schoolName: "University of Sharjah",
       logo: require("./assets/images/sharjahLogo.png"), // You'll need to add this logo to your assets
       subHeader: "Bachelor of Computer Science",
-      duration: "2020 – Present (Final Semester)",
-      desc: "GPA: 3.53",
+      duration: "2020 – 2024",
       descBullets: [
         "Contributed to research on Enhancing IoT Data",
         "Gained hands-on experience in server infrastructure management and network configuration"
       ]
     },
     {
-      schoolName: "National Charity School",
+      schoolName: "NCS",
       logo: require("./assets/images/ncsLogo.png"), // You'll need to add this logo to your assets
       subHeader: "High School (Advanced Stream)",
       duration: "2008 - 2020",
